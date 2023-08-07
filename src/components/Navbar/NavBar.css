@@ -1,0 +1,86 @@
+.navBarContainer{
+    background-color: #685b93;
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-family: 'Kanit', sans-serif;
+    position: fixed;
+    justify-content: space-between ;
+    z-index: 2;
+    
+}
+.navBarContainer a {
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+.navBarLinks ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    padding: 1vw;
+    font-size: 1.1vw;
+}
+
+.navBarLinks ul li .navBarA{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 80%;
+    height: 3vw;
+    padding-left: 1vw;
+    gap: 1vw;
+    
+}
+.navBarLinks ul li .navBarA:hover{
+    background-color: #1a1c35;
+    border-radius: 0.8vw;
+    width: 80%;
+    height: 3vw;
+
+}
+
+.navBarUser{
+    margin-top: 75%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1vw;
+    
+    
+}
+
+.navBarContainer h2{
+    font-size: 1.5vw;
+     display: flex;
+    justify-content: start;
+     align-items: center;
+     padding: 1vw;
+    margin-top: 1vw;
+    margin-left: 1.1vw;
+
+}
+.navBarContainer h2:hover{
+    color: #1a1c35 ;
+    font-weight: bold;
+}
+
+
+.navBarContainer .navBarUser .navBarData{
+    display: flex;
+    height: 5vw;
+    background-color: #1a1c35;
+    width: 90%;
+    justify-content: start;
+    padding-left: 2vw;
+    align-items: center;
+    gap: 1vw;
+    font-size: 1.1vw;
+}
+
+
+
+
+  

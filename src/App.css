@@ -1,0 +1,17 @@
+*::-webkit-scrollbar{
+    background: #252749;
+    width: 6px;
+}
+*::-webkit-scrollbar-thumb {
+    background: #685b93;
+    width: 5px;
+    border-radius: 6px;
+    opacity: 0.6;
+}
+.Body{
+    display: flex;
+    flex-direction: row;
+    background-color: #252749;
+    min-height: 100vh;
+    height: auto;  
+}

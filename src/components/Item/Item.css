@@ -1,0 +1,97 @@
+.cardContainer{
+    width: 16vw;
+    height: 25.3vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2vw;
+    opacity: 100%;
+    font-family: 'Kanit', sans-serif;
+    color: #ffffff;
+
+}
+.cardContainer:hover{
+    transform: translateY(-1%);
+    transition: 1s ease;
+    
+    
+}
+
+.imgContainer{
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.imgContainer img{
+    max-width: 100%;
+    height: auto;
+    border-top-left-radius:2vw;
+    border-top-right-radius:2vw;
+}
+.descriptionCard{
+    border-top-left-radius:2vw;
+    border-top-right-radius:2vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+
+.descriptionCard p{
+    width: 80%;
+    text-align: center;
+}
+
+.imgContainer:hover .descriptionCard {
+    opacity: 1;
+    pointer-events: auto;
+    
+  }
+
+.cardInfo{
+    margin-top: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6vw;
+    align-items: center ;
+
+  }
+.cardInfo h5{
+    font-size: 1.6vw;
+}
+.cardInfo .productP{
+    font-size: 1.1vw;
+}
+
+
+.productStats{
+    display: flex;
+    font-size: 0.8vw;
+    gap: 3vw;
+}
+.buttonConfig{
+    margin-top: 0.3vw;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5vw;
+    border-radius: 0.7vw;
+    border: 0.15vw solid #252749;
+    font-size: 1vw;
+    background-color: #252749;
+
+}
+    

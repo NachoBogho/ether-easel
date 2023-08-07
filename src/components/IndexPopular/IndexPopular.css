@@ -1,0 +1,71 @@
+.displayPopular{
+    display: flex;
+    flex-direction: column;
+    margin-left: 33vw;
+    font-family: 'Kanit', sans-serif;
+    color: #ffffff;
+    margin-bottom: 2.7vw;
+    gap: 3vw;
+}
+
+.popularDisplay{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2vw;
+    height: 1vw;
+    width: 100%;
+    
+}
+.popularDisplay p{
+    font-size: 1vw;
+    color: grey;
+    text-decoration: none;
+    opacity: 80%;
+
+}
+.cardDisplay{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    
+}
+
+.cardDisplay1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1.5vw;
+}
+
+
+.cardDisplay1 img{
+    width: 12vw;
+    height: auto;
+    border-top-left-radius:1.5vw;
+    border-bottom-left-radius:1.5vw;
+
+}
+
+.popularDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+    padding: 1vw;
+    text-align: center;
+
+}
+.popularDetails h4{
+    font-size: 1.5vw;
+}
+.popularDetails{
+    font-size: 0.8vw;
+}

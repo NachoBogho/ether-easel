@@ -1,0 +1,21 @@
+.counterButton{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    justify-content: center;
+    align-items: center;
+
+}
+.counterButton button{
+    background-color: #252749;
+    height: 1.5vw;
+    width: 3vw;
+    border-radius: 1vw;
+    border: solid 0.2vw #252749;
+    color: #ffffff;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

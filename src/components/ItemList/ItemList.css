@@ -1,0 +1,30 @@
+.productContainer{
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    gap: 3vw;
+    
+
+}
+.productDisplay{
+    margin-left: 35%;
+    display: grid;
+    gap: 2vw;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    margin-bottom: 4vw;
+
+   
+}
+
+.productName{
+    display: flex;
+    flex-direction: row;
+    margin-left: 35%;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2vw;
+    color: #ffffff;
+    margin-top: 7vw;
+}
