@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { jsonCall } from '../../js/jsonCall';   
 import ItemList from '../ItemList/ItemList';
+import Loader from "../Loader/Loader"
 import { useParams } from 'react-router-dom';
 
 const ItemListContainer = () => {
     const [products, setProducts] = useState([]);
     const category = useParams().category;
-    
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         const fetchData = async () => {
             try {
+                setLoading(true);
                 const ans = await jsonCall();
 
                 if (category) {
@@ -20,6 +22,8 @@ const ItemListContainer = () => {
                 }
             } catch (error) {
                 console.error('Error fetching data:', error);
+            } finally{
+                setLoading(false);
             }
         };
 
@@ -27,7 +31,9 @@ const ItemListContainer = () => {
     }, [category]);
 
     return (
-        <><ItemList products={products}/></>
+        <>
+        {loading ? <Loader />:<ItemList products={products}/>}
+        </>
     );
 };
 

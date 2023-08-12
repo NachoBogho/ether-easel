@@ -18,9 +18,9 @@ const ItemCount = () => {
 
   return (
     <div className='counterButton'>
-    <button onClick={sumar}>+</button>
+   <button onClick={restar}>-</button>
     <p>{number}</p>
-    <button onClick={restar}>-</button>
+    <button onClick={sumar}>+</button>
     </div>
   )
 }

@@ -18,9 +18,9 @@ const ItemDetail = ({ item }) => {
         <p>{item.description}</p>
         <ItemCount/>
         <div className='submitButton'>
-        <Link to="#" className="buttonConfig">Go to Buy</Link>
-        <Link to="#" className="buttonConfig">Add Cart</Link>
         <Link to="/store" className="buttonConfig">Back to Store</Link>
+        <Link to="#" className="buttonConfig">Add Cart</Link>
+        <Link to="#" className="buttonConfig">Go to Buy</Link>
         </div>
       </div>
       <img  className='detailImg' src={item.image} alt="" />

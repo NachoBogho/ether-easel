@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {} from 'react'
 import NavBar from './components/Navbar/NavBar'
 import './reset.css'
 import './App.css'
@@ -8,7 +8,9 @@ import SerchBar from './components/SerchBar/SerchBar'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 import IndexContainer from './components/IndexContainer/IndexContainer'
 
+
 export default function App() {
+
   return (
     <div className='Body'>
       <BrowserRouter>
