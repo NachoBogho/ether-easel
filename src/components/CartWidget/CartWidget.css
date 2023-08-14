@@ -1,0 +1,30 @@
+ .cartNumberDisplay{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6vw;
+    text-decoration: none;
+}
+
+.cartNumber{
+    color: #ffffff;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2vw;
+    padding-top: 0.13vh;
+    align-items: center;
+    height: auto;
+
+
+}
+.carritoLink:hover{
+    color: #685b93;
+
+}
+
+.carrito{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.2vw;
+}

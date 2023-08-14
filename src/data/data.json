@@ -2,7 +2,7 @@
     {
       "id": 1,
       "name": "Baby Gucc1",
-      "price": 50.99,
+      "price": 50,
       "description": "This is a beautiful digital artwork.",
       "creator": "Artist1",
       "category": "RGV",
@@ -12,7 +12,7 @@
     {
       "id": 2,
       "name": "M3lt",
-      "price": 75.50,
+      "price": 75,
       "description": "A fascinating creation in NFT format.",
       "creator": "Artist2",
       "category": "RGV",
@@ -22,7 +22,7 @@
     {
       "id": 3,
       "name": "Destiny",
-      "price": 30.25,
+      "price": 30,
       "description": "A unique and one-of-a-kind piece.",
       "creator": "Artist3",
       "category": "RGV",
@@ -32,7 +32,7 @@
     {
       "id": 4,
       "name": "L0ts0",
-      "price": 120.00,
+      "price": 120,
       "description": "An impressive digital artwork.",
       "creator": "Artist4",
       "category": "RGV",
@@ -42,7 +42,7 @@
     {
       "id": 5,
       "name": "Tigger X",
-      "price": 89.99,
+      "price": 89,
       "description": "An exceptional creation in the world of NFTs.",
       "creator": "Artist5",
       "category": "RGV",
@@ -52,7 +52,7 @@
     {
       "id": 6,
       "name": "Alex-A",
-      "price": 45.75,
+      "price": 45,
       "description": "A masterpiece of the digital era.",
       "creator": "Artist6",
       "category": "RGV",
@@ -62,7 +62,7 @@
     {
       "id": 7,
       "name": "Brainn",
-      "price": 65.00,
+      "price": 65,
       "description": "An unmatched artistic gem.",
       "creator": "Artist7",
       "category": "RGV",
@@ -72,7 +72,7 @@
     {
       "id": 8,
       "name": "Head Each",
-      "price": 55.49,
+      "price": 55,
       "description": "A creation that sparks imagination.",
       "creator": "Artist8",
       "category": "RGV",
@@ -82,7 +82,7 @@
     {
       "id": 9,
       "name": "All H",
-      "price": 95.20,
+      "price": 95,
       "description": "An artistic expression with a touch of innovation.",
       "creator": "Artist9",
       "category": "Uniqe",
@@ -92,7 +92,7 @@
     {
       "id": 10,
       "name": "Zweet",
-      "price": 70.30,
+      "price": 70,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist10",
       "category": "Uniqe",
@@ -102,7 +102,7 @@
     {
       "id": 11,
       "name": "Futur3 ",
-      "price": 45.90,
+      "price": 45,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist11",
       "category": "Uniqe",
@@ -112,7 +112,7 @@
     {
       "id": 12,
       "name": "Fire Angel",
-      "price": 7.80,
+      "price": 7,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist12",
       "category": "Uniqe",
@@ -122,7 +122,7 @@
     {
       "id": 13,
       "name": "Gun Fight",
-      "price": 23.90,
+      "price": 23,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist13",
       "category": "Uniqe",
@@ -132,7 +132,7 @@
     {
       "id": 14,
       "name": "Gold One",
-      "price": 98.99,
+      "price": 98,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist14",
       "category": "Uniqe",
@@ -152,7 +152,7 @@
     {
       "id": 16,
       "name": "HW Spikez ",
-      "price": 54.6,
+      "price": 54,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist16",
       "category": "Uniqe",
@@ -162,7 +162,7 @@
     {
       "id": 17,
       "name": "MetaPuffer 239",
-      "price": 89.99 ,
+      "price": 89 ,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist17",
       "category": "MetaPuffer",
@@ -172,7 +172,7 @@
     {
       "id": 18,
       "name": "MetaPuffer 212",
-      "price": 71.90,
+      "price": 71,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist18",
       "category": "MetaPuffer",
@@ -182,7 +182,7 @@
     {
       "id": 19,
       "name": "MetaPuffer 111",
-      "price": 51.80,
+      "price": 51,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist19",
       "category": "MetaPuffer",
@@ -192,7 +192,7 @@
     {
       "id": 20,
       "name": "MetaPuffer 766",
-      "price": 67.45,
+      "price": 67,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist20",
       "category": "MetaPuffer",
@@ -202,7 +202,7 @@
     {
       "id": 21,
       "name": "MetaPuffer 909",
-      "price": 97.99,
+      "price": 97,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist21",
       "category": "MetaPuffer",
@@ -212,7 +212,7 @@
     {
       "id": 22,
       "name": "MetaPuffer 03",
-      "price": 71.20,
+      "price": 71,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist22",
       "category": "MetaPuffer",
@@ -222,7 +222,7 @@
     {
       "id": 23,
       "name": "MetaPuffer 100",
-      "price": 106.99,
+      "price": 106,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist23",
       "category": "MetaPuffer",
@@ -232,7 +232,7 @@
     {
       "id": 24,
       "name": "MetaPuffer 69",
-      "price": 54.55,
+      "price": 54,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist24",
       "category": "MetaPuffer",
@@ -242,7 +242,7 @@
     {
       "id": 25,
       "name": "Rebelzs Z-09",
-      "price": 7.80,
+      "price": 13,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist25",
       "category": "Rebelzs",
@@ -252,7 +252,7 @@
     {
       "id": 26,
       "name": "Rebelzs X-05",
-      "price": 7.80,
+      "price": 91,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist26",
       "category": "Rebelzs",
@@ -262,7 +262,7 @@
     {
       "id": 27,
       "name": "Rebelzs P-07",
-      "price": 7.80,
+      "price": 24,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist27",
       "category": "Rebelzs",
@@ -272,7 +272,7 @@
     {
       "id": 28,
       "name": "Rebelzs M-01",
-      "price": 7.80,
+      "price": 76,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist28",
       "category": "Rebelzs",
@@ -282,7 +282,7 @@
     {
       "id": 29,
       "name": "Rebelzs K-08",
-      "price": 7.80,
+      "price": 55,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist29",
       "category": "Rebelzs",
@@ -292,7 +292,7 @@
     {
       "id": 30,
       "name": "Rebelzs R-04",
-      "price": 7.80,
+      "price": 22,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist30",
       "category": "Rebelzs",
@@ -302,7 +302,7 @@
     {
       "id": 31,
       "name": "Rebelzs H-06",
-      "price": 7.80,
+      "price": 56,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist31",
       "category": "Rebelzs",
@@ -312,7 +312,7 @@
     {
       "id": 32,
       "name": "Rebelzs F-03",
-      "price": 7.80,
+      "price": 77,
       "description": "A unique artwork that will leave you breathless.",
       "creator": "Artist32",
       "category": "Rebelzs",

@@ -1,20 +1,9 @@
-import React, { useState } from 'react'
+import React, {} from 'react'
 import './ItemCount.css'
 
 
 
-const ItemCount = () => {
-    const [number, setNumber] = useState(0);
-
-  const sumar = () => {
-    setNumber(number + 1);
-  };
-
-  const restar = () => {
-    if (number > 0) {
-      setNumber(number - 1);
-    }
-  };
+const ItemCount = ({number, restar, sumar}) => {
 
   return (
     <div className='counterButton'>
