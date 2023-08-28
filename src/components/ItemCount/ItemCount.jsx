@@ -1,8 +1,6 @@
 import React, {} from 'react'
 import './ItemCount.css'
 
-
-
 const ItemCount = ({number, restar, sumar}) => {
 
   return (

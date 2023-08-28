@@ -1,30 +1,37 @@
-import React, { useEffect, useState } from 'react';
-import './SerchBar.css';
-import { Link, useParams } from 'react-router-dom';
-import CartWidget from '../CartWidget/CartWidget';
-import { jsonCall } from '../../js/jsonCall';
 
-const SerchBar = () => {
+import { useEffect, useState } from 'react';
+import { useNavigate, Link } from 'react-router-dom'; // Importa useHistory y Link
+import { collection, query, where, getDocs } from 'firebase/firestore';
+import { db } from '../../main';
+import CartWidget from '../CartWidget/CartWidget'
+import './SerchBar.css'
+
+function SerchBar() {
   const [products, setProducts] = useState([]);
-  const category = useParams().category;
+  const [loading, setLoading] = useState(false);
+  const history = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const ans = await jsonCall();
+        setLoading(true);
+        const getData = collection(db, "NFT");
+        const querySnapshot = await getDocs(getData);
+        const data = querySnapshot.docs.map((doc) => ({
+          ...doc.data(),
+          id: doc.id,
+        }));
 
-        if (category) {
-          setProducts(ans.filter((product) => product.category === category));
-        } else {
-          setProducts(ans);
-        }
+        setProducts(data);
       } catch (error) {
         console.error('Error fetching data:', error);
+      } finally {
+        setLoading(false);
       }
     };
 
     fetchData();
-  }, [category]);
+  }, []);
 
   const handleSearch = (searchQuery) => {
     const filteredProducts = products.filter(
@@ -34,7 +41,9 @@ const SerchBar = () => {
         product.description.toLowerCase().includes(searchQuery.toLowerCase())
     );
 
-    // Realizar la redirección a /store con los productos filtrados
+    setProducts(filteredProducts);
+
+   
     window.location.href = `/store?search=${encodeURIComponent(searchQuery)}`;
   };
 
@@ -57,25 +66,21 @@ const SerchBar = () => {
       </div>
       <div className="serchCart">
         <div className="dropdown">
-
-          <div className="dropdown">
-            <button className="btnConfig" type="button" data-toggle="dropdown">
-              Categories<span className="caret"></span>
-            </button>
-            <ul className="dropdown-menu">
-              <li><Link to="/store">All</Link></li>
-              <li><Link to="/store/MetaPuffer">Metapuffer</Link></li>
-              <li><Link to="/store/Rebelzs">Rebelzs</Link></li>
-              <li><Link to="/store/Uniqe">Uniqe</Link></li>
-              <li><Link to="/store/RGV">RGV</Link></li>
-            </ul>
-          </div>
-
+          <button className="btnConfig" type="button" data-toggle="dropdown">
+            Categories<span className="caret"></span>
+          </button>
+          <ul className="dropdown-menu">
+            <li><Link to="/store">All</Link></li>
+            <li><Link to="/store/MetaPuffer">Metapuffer</Link></li>
+            <li><Link to="/store/Rebelzs">Rebelzs</Link></li>
+            <li><Link to="/store/Uniqe">Uniqe</Link></li>
+            <li><Link to="/store/RGV">RGV</Link></li>
+          </ul>
         </div>
-        <CartWidget />
+        <CartWidget/>
       </div>
     </nav>
   );
-};
+}
 
 export default SerchBar;

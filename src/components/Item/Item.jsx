@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import './Item.css';
 import { Link } from 'react-router-dom';
-import { CartContext } from '../../context/CartContext'; // Asegúrate de importar el contexto
+import { CartContext } from '../../context/CartContext'; 
 
 const Item = ({ product }) => {
   const { carrito } = useContext(CartContext); // Obtén el carrito desde el contexto
@@ -9,13 +9,10 @@ const Item = ({ product }) => {
   // Encuentra el producto correspondiente en el carrito
   const carritoProduct = carrito.find((item) => item.id === product.id);
 
-  // Calcula el stock disponible restando la cantidad en el carrito
-  const availableStock = carritoProduct
+  // Calcula el stock restante en base al stock de la base de datos y la cantidad en el carrito
+  const remainingStock = carritoProduct
     ? product.stock - carritoProduct.quantity
     : product.stock;
-
-  // Calcula el stock restante en caso de que el usuario haya eliminado elementos del carrito
-  const remainingStock = availableStock > 0 ? availableStock : 0;
 
   return (
     <div className='cardContainer'>

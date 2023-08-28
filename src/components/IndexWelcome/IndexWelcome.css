@@ -10,8 +10,13 @@
     position: relative;
     text-align: center;
     padding-bottom: 3vw;
-    
-    
+
+}
+
+.IndexCard:hover{
+    transform: translateY(-0.5%);
+    transition: 1s ease;
+
 }
 .IndexCard img{
     width: 100%;

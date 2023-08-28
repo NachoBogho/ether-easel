@@ -1,23 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
-import { getItemById } from '../../js/getItemById';
 import { useParams } from 'react-router-dom';
+import { getDoc, doc } from 'firebase/firestore';
+import { db } from '../../main';
 
 const ItemDetailContainer = () => {
     const [item, setItem] = useState(null);
     const id = useParams().id;
 
     useEffect(() => {
-        const fetchItem = async () => {
-            try {
-                const ans = await getItemById(Number(id));
-                setItem(ans);
-            } catch (error) {
-                console.error('Error fetching item:', error);
-            }
-        };
+       const getProduct = doc(db, "NFT", id);
+       getDoc(getProduct)
+       .then((answ) => {
+           setItem(
+            { ...answ.data(), id: answ.id}
 
-        fetchItem();
+            );
+       
+    })
+       
     }, [id]);
 
     return (

@@ -1,12 +1,34 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import './ItemDetail.css';
 import { Link } from 'react-router-dom';
 import ItemCount from '../ItemCount/ItemCount';
 import { CartContext } from '../../context/CartContext';
+import { db } from '../../main';
+import { doc, getDoc, updateDoc } from 'firebase/firestore';
 
 const ItemDetail = ({ item }) => {
-  const { carrito, addCart } = useContext(CartContext);
+  const { addCart } = useContext(CartContext);
   const [quantity, setQuantity] = useState(1);
+
+  const { carrito, calculateAvailableStock } = useContext(CartContext);
+  const carritoProduct = carrito.find((cartItem) => cartItem.id === item.id);
+
+  const [initialStock, setInitialStock] = useState(0);
+
+  useEffect(() => {
+    const fetchStock = async () => {
+      const docRef = doc(db, 'NFT', item.id);
+      const docSnap = await getDoc(docRef);
+      if (docSnap.exists()) {
+        setInitialStock(docSnap.data().stock);
+      }
+    };
+    fetchStock();
+  }, [item.id]);
+
+  const availableStock = carritoProduct
+    ? initialStock - carritoProduct.quantity
+    : initialStock;
 
   const restar = () => {
     if (quantity > 1) {
@@ -15,16 +37,15 @@ const ItemDetail = ({ item }) => {
   };
 
   const sumar = () => {
-    if (quantity < item.stock) {
+    if (quantity < availableStock) {
       setQuantity(quantity + 1);
     }
   };
 
-  const addToCart = () => {
-    if (quantity <= item.stock && quantity > 0) {
+  const addToCart = async () => {
+    if (quantity <= availableStock && quantity > 0) {
       addCart(item, quantity);
-      item.stock -= quantity; 
-      setQuantity(1); 
+      setQuantity(1);
     } else if (quantity === 0) {
       alert('La cantidad no puede ser cero.');
     } else {
@@ -40,7 +61,7 @@ const ItemDetail = ({ item }) => {
         <div className='displayFlex'>
           <p>Author: {item.creator}</p>
           <p>Category: {item.category}</p>
-          <p>Stock: {item.stock}</p>
+          <p>Stock: {availableStock >= 0 ? availableStock : 0}</p>
         </div>
         <p>{item.description}</p>
         <ItemCount number={quantity} restar={restar} sumar={sumar} />
@@ -48,9 +69,9 @@ const ItemDetail = ({ item }) => {
           <Link to='/store' className='buttonConfig'>
             Back to Store
           </Link>
-          <Link className='buttonConfig' onClick={addToCart}>
+          <button className='buttonConfig' onClick={addToCart}>
             Add to Cart
-          </Link>
+          </button>
           <Link to='/cart' className='buttonConfig'>
             Go to Cart
           </Link>
