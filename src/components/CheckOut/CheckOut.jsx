@@ -36,70 +36,68 @@ const CheckOut = () => {
     setFormattedCreditCardNumber(formattedValue.slice(0, 19));
   };
   
-  if (orderId){
-     return (
+  if (orderId) {
+    return (
       <div className='displayOrder'>
         <h2 className='messageStore'>Thanks for your purchase! <br /> Your order number is <span className='colorSpan'>{orderId}</span> </h2>
         <Link to='/'><button className="goHome" type="submit">Go Home</button></Link>
       </div>
-        
-     )
-
+    );
   }
-
+  
   return (
     <div className="containerPay">
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="row">
           <div className="col">
-            <h3 className="title">Dirección de Facturación</h3>
+            <h3 className="title">Billing Address</h3>
             <div className="inputBox">
-              <span>Nombre completo :</span>
+              <span>Full Name:</span>
               <input {...register('fullName', { required: true })} type="text" placeholder="John Doe" />
-              {errors.fullName && <span className="error">Se requiere el nombre completo</span>}
+              {errors.fullName && <span className="error">Full name is required</span>}
             </div>
             <div className="inputBox">
-              <span>Correo electrónico :</span>
-              <input {...register('email', { required: true, pattern: /^\S+@\S+$/i })} type="email" placeholder="ejemplo@ejemplo.com" />
-              {errors.email && <span className="error">Se requiere un correo electrónico válido</span>}
+              <span>Email:</span>
+              <input {...register('email', { required: true, pattern: /^\S+@\S+$/i })} type="email" placeholder="example@example.com" />
+              {errors.email && <span className="error">A valid email is required</span>}
             </div>
             <div className="inputBox">
-              <span>Dirección :</span>
+              <span>Address:</span>
               <input {...register('address', { required: true })} type="text" placeholder="1375 Broadway" />
-              {errors.address && <span className="error">Se requiere la dirección</span>}
+              {errors.address && <span className="error">Address is required</span>}
             </div>
             <div className="inputBox">
-              <span>Ciudad :</span>
-              <input {...register('city', { required: true })} type="text" placeholder="Nueva York" />
-              {errors.city && <span className="error">Se requiere la ciudad</span>}
+              <span>City:</span>
+              <input {...register('city', { required: true })} type="text" placeholder="New York" />
+              {errors.city && <span className="error">City is required</span>}
             </div>
             <div className="flex">
               <div className="inputBox">
-                <span>Estado :</span>
-                <input {...register('state', { required: true })} type="text" placeholder="Estados Unidos" />
-                {errors.state && <span className="error">Se requiere el estado</span>}
+                <span>State:</span>
+                <input {...register('state', { required: true })} type="text" placeholder="United States" />
+                {errors.state && <span className="error">State is required</span>}
               </div>
               <div className="inputBox">
-                <span>Código postal :</span>
+                <span>Zip Code:</span>
                 <input {...register('zipCode', { required: true })} type="text" placeholder="10013" />
-                {errors.zipCode && <span className="error">Se requiere el código postal</span>}
+                {errors.zipCode && <span className="error">Zip code is required</span>}
               </div>
             </div>
           </div>
-
+  
           <div className="col">
-            <h3 className="title"><span className="orangeColor fontBold">Pago</span></h3>
+            <h3 className="title"><span className="orangeColor fontBold">Payment</span></h3>
             <div className="inputBox">
-              <span>Tarjetas aceptadas :</span>
+              <span>Accepted Cards:</span>
               <img src="../../../public/img/CheckOutImg/card_img.png" alt="" />
             </div>
             <div className="inputBox">
-              <span>Nombre en la tarjeta :</span>
+              <span>Name on Card:</span>
               <input {...register('nameOnCard', { required: true })} type="text" placeholder="John David Doe" />
-              {errors.nameOnCard && <span className="error">Se requiere el nombre en la tarjeta</span>}
+              {errors.nameOnCard && <span className="error">Name on card is required</span>}
             </div>
             <div className="inputBox">
-              <span>Número de tarjeta de crédito :</span>
+              <span>Credit Card Number:</span>
               <input
                 {...register('creditCardNumber', { required: true, pattern: /^\d{4}-\d{4}-\d{4}-\d{4}$/ })}
                 type="text"
@@ -108,37 +106,32 @@ const CheckOut = () => {
                 onChange={handleCreditCardNumberChange}
               />
               {errors.creditCardNumber && (
-                <span className="error">Ingrese un número de tarjeta válido (ej. 1111-2222-3333-4444)</span>
+                <span className="error">Enter a valid card number (e.g., 1111-2222-3333-4444)</span>
               )}
             </div>
             <div className="inputBox">
-              <span>Mes de expiración :</span>
-              <input {...register('expMonth', { required: true })} type="text" placeholder="Enero" />
-              {errors.expMonth && <span className="error">Se requiere el mes de expiración</span>}
+              <span>Expiration Month:</span>
+              <input {...register('expMonth', { required: true })} type="text" placeholder="January" />
+              {errors.expMonth && <span className="error">Expiration month is required</span>}
             </div>
             <div className="flex">
               <div className="inputBox">
-                <span>Año de expiración :</span>
+                <span>Expiration Year:</span>
                 <input {...register('expYear', { required: true, pattern: /^(19|20)\d{2}$/ })} type="text" placeholder="2023" />
-                {errors.expYear && <span className="error">Ingrese un año de expiración válido (ej. 2023)</span>}
+                {errors.expYear && <span className="error">Enter a valid expiration year (e.g., 2023)</span>}
               </div>
               <div className="inputBox">
-                <span>CVV :</span>
+                <span>CVV:</span>
                 <input {...register('cvv', { required: true })} type="text" placeholder="1234" />
-                {errors.cvv && <span className="error">Se requiere el CVV</span>}
+                {errors.cvv && <span className="error">CVV is required</span>}
               </div>
             </div>
           </div>
         </div>
-        <button className="FinishBuy" type="submit">Realizar Pago</button>
+        <button className="FinishBuy" type="submit">Complete Payment</button>
       </form>
-
-
-
-
     </div>
-    
   );
-}
-
-export default CheckOut;
+  }
+  
+  export default CheckOut
