@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import '../node_modules/bootstrap-icons/font/bootstrap-icons.css'
 
-// Import the functions you need from the SDKs you need
+import { getAuth } from 'firebase/auth'
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore"
 // TODO: Add SDKs for Firebase products that you want to use
@@ -21,7 +21,8 @@ const firebaseConfig = {
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
+export const db = getFirestore(app) 
+export const database = getAuth(app)
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

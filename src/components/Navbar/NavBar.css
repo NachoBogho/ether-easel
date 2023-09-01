@@ -77,7 +77,12 @@
     padding-left: 2vw;
     align-items: center;
     gap: 1vw;
-    font-size: 1.1vw;
+    font-size: 0.9vw;
+}
+.paddingL{
+    padding-left: 4vw;
+    opacity: 70%;
+
 }
 
 

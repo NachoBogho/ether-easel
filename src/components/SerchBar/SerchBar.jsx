@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom'; // Importa useHistory y Link
+import { useNavigate, Link } from 'react-router-dom'; 
 import { collection, query, where, getDocs } from 'firebase/firestore';
 import { db } from '../../main';
 import CartWidget from '../CartWidget/CartWidget'
@@ -52,7 +52,7 @@ function SerchBar() {
       <div className="serchContainer">
         <input
           type="text"
-          placeholder="Buscar..."
+          placeholder="Serch..."
           onKeyUp={(event) => {
             if (event.key === 'Enter') {
               handleSearch(event.target.value);

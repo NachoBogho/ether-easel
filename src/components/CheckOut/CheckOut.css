@@ -1,0 +1,121 @@
+.containerPay{
+    font-family: 'Kanit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vw;
+    margin-left: 25%;
+    margin-top: 3%;
+    width: 70vw;
+    
+  }
+  
+  .containerPay form{
+    width:100%;
+    background: #252749;
+  }
+  
+  .containerPay form .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10vw;
+  }
+  
+  .containerPay form .row .col .title{
+    font-size: 2vw;
+    color:#ffffff;
+    padding-bottom: 2vw;
+    font-family: 'Kanit', sans-serif;
+    
+    
+  }
+  
+  .containerPay form .row .col .inputBox{
+    margin:1.3vw 0;
+  }
+  
+  .containerPay form .row .col .inputBox span{
+    margin-bottom: 1vw;
+    display: block;
+    color: #ffffff;
+  }
+  
+  .containerPay form .row .col .inputBox input{
+    width: 75%;
+    height: 2vh;
+    border:1px solid #ffffff;
+    padding:.85vw 1.3vw;
+    font-size: 1vw;
+    text-transform: none;
+    color: #ffffff;
+    font-family: 'Kanit', sans-serif;
+    border-radius: 1vw;
+    background-color: #252749;;
+  }
+  
+  .containerPay form .row .col .inputBox input:focus{
+    border:1px solid #000;
+  }
+  
+  .containerPay form .row .col .flex{
+    display: flex;
+    gap:0.5vw;
+  }
+  .containerPay form .row .col .flex input{
+    width: 50%;
+    
+  }
+  
+  .containerPay form .row .col .flex .inputBox{
+    margin-top: 1vw;
+  }
+  
+  .containerPay form .row .col .inputBox img{
+    height: 34px;
+    margin-top: 5px;
+    filter: drop-shadow(0 0 1px #000);
+  }
+
+
+  .FinishBuy{
+    margin-top: 0.3vw;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5vw;
+    border-radius: 0.7vw;
+    border: 0.15vw solid #685b93;
+    font-family: 'Kanit', sans-serif;
+    font-size: 0.8vw;
+    width: 10vw;
+    background-color: #685b93;
+    margin-left: 53.7vw;
+}
+
+.span{
+  color: red;
+}
+
+.displayOrder{
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
+  gap: 10vw;
+  margin-left: 30%;
+
+}
+
+.goHome{
+    
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5vw;
+    border-radius: 0.7vw;
+    border: 0.15vw solid #685b93;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5vw;
+    width: 15vw;
+    height: 7vh;
+    background-color: #685b93;
+    margin-left: 13vw;
+    
+}

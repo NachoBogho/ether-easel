@@ -1,0 +1,103 @@
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 9%;
+    margin-left: 35%;
+    gap: 2vw;
+    width: 40vw;
+    height: 54vh;
+    background-color: #1d1e3a;
+    padding: 3vw;
+    border-radius: 2vw;
+}
+
+.loginDisplay {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #ffffff;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1vw;
+    margin-top: 2vw;
+}
+
+.loginSetup {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 1vw;
+    gap: 4vw;
+
+}
+
+.formDisplay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1.8vw;
+    font-family: 'Kanit', sans-serif;
+}
+
+.formDisplay h1{
+    font-size: 2vw;
+    color: #ffffff;
+    font-family: 'Kanit', sans-serif;
+}
+
+.formDisplay input {
+    background-color: #252749;
+    opacity: 90%;
+    height: 2vw;
+    width: 15vw;
+    border-radius: 1vw;
+    border: solid 0.2vw #1d1e3a;
+    padding-left: 2vw;
+    color: #ffffff;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.1vw;
+    
+
+}
+
+.imgLogin {
+    width: 50%;
+    height: auto;
+    border-radius: 2vw;
+}
+
+.formDisplay button {
+    background-color: #252749;
+    padding: 0.2vw;
+    color: #ffffff;
+    font-size: 0.9vw;
+    border-radius: 0.8vw;
+    border: solid 0.2vw #252749;
+    font-family: 'Kanit', sans-serif;
+}
+
+.formDisplay p{
+    justify-content: center;
+    display: flex;
+    color: #ffffff;
+    font-size: 0.8vw;
+    
+
+}
+.setButton{
+    background-color: #252749;
+    padding: 0.2vw;
+    color: #ffffff;
+    font-size: 0.9vw;
+    border-radius: 0.8vw;
+    border: solid 0.2vw #252749;
+    font-family: 'Kanit', sans-serif;
+    width: 7vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.notificationStyle{
+    padding-top: 5vw;
+
+}
