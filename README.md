@@ -1,7 +1,7 @@
 # 🌌 ETHER EASEL 🌌
 ##### CREATED BY IGNACIO BOGHOSSIAN
 
-![HOW IT WORKS](./public/img/README/landing.gif)
+![HOW IT WORKS](./public/img/README/Landing.mp4)
 
 ##### ¡Bienvenidos a ETHER EASEL! Este proyecto está dedicado a revolucionar la forma en que las personas compran y venden Tokens No Fungibles en el espacio del arte digital y coleccionables. Los NFTs han surgido como una tecnología innovadora que permite a los creadores tokenizar y autenticar sus creaciones digitales, otorgándoles propiedad y rareza a estos elementos. 
 
